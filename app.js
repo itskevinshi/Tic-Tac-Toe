@@ -77,8 +77,11 @@ export default function Game() {
     }
     return (
       <li key={move}>
-        <button class="cta" onClick={() => jumpTo(move)}>
-          <span class="hover-underline-animation"> {description} </span>
+        <button
+          className={`cta ${move === currentMove ? "current-move" : ""}`}
+          onClick={() => jumpTo(move)}
+        >
+          <span className="hover-underline-animation"> {description} </span>
           <svg
             viewBox="0 0 46 16"
             height="10"
