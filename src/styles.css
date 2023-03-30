@@ -6,6 +6,8 @@ body {
   font-family: sans-serif;
   margin: 20px;
   padding: 0;
+  background-color: #dde6d0;
+  background-image: radial-gradient(#86927d 0.5px, #dde6d0 0.5px);
 }
 
 h1 {
@@ -73,7 +75,7 @@ body {
 
 .board-row:after {
   clear: both;
-  content: '';
+  content: "";
   display: table;
 }
 
